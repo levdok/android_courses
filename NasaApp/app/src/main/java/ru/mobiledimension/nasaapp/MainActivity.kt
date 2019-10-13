@@ -17,27 +17,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Stetho.initializeWithDefaults(this)
-        magicBtn.setOnClickListener { requestAPOD() }
+//        magicBtn.setOnClickListener { requestAPOD() }
     }
 
 
     private fun requestAPOD() {
-        nasaApi.getAPOD(date = dateET.text.toString())
-            .enqueue(
-                object : Callback<APOD> {
-                    override fun onFailure(call: Call<APOD>, t: Throwable) {
-                        t.printStackTrace()
-                    }
-
-                    override fun onResponse(call: Call<APOD>, response: Response<APOD>) {
-                        Log.wtf("response", response.body().toString())
-                        response.body()?.url?.let {
-                            Glide.with(imageIV)
-                                .load(it)
-                                .into(imageIV)
-                        }
-                    }
-                }
-            )
+//        nasaApi.getAPOD(date = dateET.text.toString())
+//            .enqueue(
+//                object : Callback<APOD> {
+//                    override fun onFailure(call: Call<APOD>, t: Throwable) {
+//                        t.printStackTrace()
+//                    }
+//
+//                    override fun onResponse(call: Call<APOD>, response: Response<APOD>) {
+//                        Log.wtf("response", response.body().toString())
+//                        response.body()?.url?.let {
+//                            Glide.with(imageIV)
+//                                .load(it)
+//                                .into(imageIV)
+//                        }
+//                    }
+//                }
+//            )
     }
 }

@@ -2,4 +2,13 @@
     <string name="app_name">NasaApp</string>
 
     <string name="magicBtnText">Make magic</string>
+    <string name="photoOfDay">Фото дня</string>
+    <string name="galley">Галерея</string>
+    <string name="photoFromSatellite">Фото со спуника</string>
+    <string name="exit">Выход</string>
+    <string name="year">Год</string>
+    <string name="month">Месяц</string>
+    <string name="day">День</string>
+    <string name="loadPhoto">Загрузить фото</string>
+    <string name="savePhoto">Сохранить</string>
 </resources>
